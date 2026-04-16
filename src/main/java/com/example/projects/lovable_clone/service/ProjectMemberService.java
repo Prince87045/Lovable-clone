@@ -3,7 +3,6 @@ package com.example.projects.lovable_clone.service;
 import com.example.projects.lovable_clone.dto.member.InviteMemberRequest;
 import com.example.projects.lovable_clone.dto.member.MemberResponse;
 import com.example.projects.lovable_clone.dto.member.UpdateMemberRoleRequest;
-import org.jspecify.annotations.Nullable;
 
 import java.util.List;
 
@@ -14,5 +13,5 @@ public interface ProjectMemberService {
 
     MemberResponse updateMemberRole(Long projectId, Long memberId, UpdateMemberRoleRequest request, Long userId);
 
-    MemberResponse deleteProjectMember(Long projectId, Long memberId, Long userId);
+    void removeProjectMember(Long projectId, Long memberId, Long userId);
 }

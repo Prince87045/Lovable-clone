@@ -1,5 +1,6 @@
 package com.example.projects.lovable_clone.service;
 
+import com.example.projects.lovable_clone.dto.project.FileContentResponse;
 import com.example.projects.lovable_clone.dto.project.FileNode;
 import org.jspecify.annotations.Nullable;
 

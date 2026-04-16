@@ -1,5 +1,6 @@
 package com.example.projects.lovable_clone.controller;
 
+import com.example.projects.lovable_clone.dto.subscription.PlanLimitsResponse;
 import com.example.projects.lovable_clone.dto.subscription.UsageTodayResponse;
 import com.example.projects.lovable_clone.service.UsageService;
 import lombok.RequiredArgsConstructor;

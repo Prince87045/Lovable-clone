@@ -28,6 +28,6 @@ public class FileController {
     @GetMapping("/{*path}")
     public ResponseEntity<FileContentResponse> getFile(@PathVariable Long projectid, @PathVariable String path){
     Long userId = 1L;
-    return ResponseEntity.ok(fileService.getFileContent(projectId,path,userId));
+    return ResponseEntity.ok(fileService.getFileContent(projectid,path,userId));
     }
 }
