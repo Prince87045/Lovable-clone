@@ -1,4 +1,12 @@
 package com.example.projects.lovable_clone.security;
 
-public record JwtUserPrincipal() {
+import org.springframework.security.core.GrantedAuthority;
+
+import java.util.List;
+
+public record JwtUserPrincipal(
+        Long userId,
+        String username,
+        List<GrantedAuthority> authorities
+) {
 }
